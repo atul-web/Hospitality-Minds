@@ -1783,7 +1783,7 @@ ol.list-num-count.list-outline-none>li:before {
 }
 
 .bg-gray-light {
-	background-color: #f9f9f9;
+	background-color: #f4b9b9;
 }
 
 .bg-gray-dark {
@@ -7664,7 +7664,7 @@ ol.commentlist li::after {
 	position: relative;
 	overflow: hidden;
 	border-style: solid;
-	border-color: #ddd;
+	border-color: #df2c8d;
 	border-width: 1px 1px 0px 0px;
 }
 
@@ -7700,14 +7700,14 @@ ol.commentlist li::after {
 	transform: skew(0deg) translateX(155%);
 }
 
-.client-logo-pic img {
+/*.client-logo-pic img {
 	backface-visibility: hidden;
 	max-width: 100%;
 	vertical-align: top;
 	position: relative;
 	z-index: 2;
 	opacity: 0.2;
-}
+}*/
 
 .client-logo-pic div {
 	top: 30px;
@@ -7730,16 +7730,16 @@ ol.commentlist li::after {
 	transform: scale(0.6);
 }
 
-.client-logo-pic:hover:before {
+/*.client-logo-pic:hover:before {
 	-webkit-transform: skew(0deg) translateX(-50%);
 	transform: skew(0deg) translateX(-50%);
-}
+}*/
 
-.client-logo-pic:hover:after {
+/*.client-logo-pic:hover:after {
 	-webkit-transform: skew(0deg) translateX(50%);
 	transform: skew(0deg) translateX(50%);
 }
-
+*/
 .client-logo-pic:hover div {
 	-webkit-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
@@ -10665,5 +10665,73 @@ line-list-style
 	.home-2-slider .sx-bnr-2-large-title{font-size: 32px;}
 	.home-2-slider .sx-bnr-2-small-title{font-size: 18px;}
 	.home-2-slider {height: auto;}
+}
+
+.services-1:hover{
+	background-color: #e12b8d;
+	border-radius: 40px;
+}
+.number-block-two:hover .text-1 {
+  color: white;
+}
+
+.number-block-two .text-1 {
+  transition: color 2s ease;
+}
+
+.number-block-two:hover .text-1 {
+  color: white;
+}
+
+
+/*video section*/
+
+.video-section {
+  position: relative;
+  height: 100vh;
+  background-image: url('your-background-image.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.video-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  height: 80%;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.video-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease;
+}
+
+.video-overlay:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+  transform: translate(-50%, -50%) scale(1.1);
+}
+
+.fas.fa-play {
+  font-size: 50px;
+  color: #fff;
+  transition: all 0.2s ease;
+}
+
+.video-overlay:hover .fas.fa-play {
+  transform: scale(1.5);
 }
 
